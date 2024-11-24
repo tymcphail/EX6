@@ -1,1 +1,2 @@
-# EX6
+# Normalization Exercise
+This document outlines Exercise 6 for a database design task, focusing on normalizing a table for Amazon's order system. It starts with an unnormalized table, containing various attributes. The exercise proceeds to Step 1 (1NF), ensuring each field contains only atomic values, restructuring the table to separate order details and pricing information. In Step 2 (2NF), the data is further divided into two tables: Item and Order, eliminating partial dependencies. Functional dependencies and primary dependencies are identified for both steps, improving data integrity and reducing redundancy.
