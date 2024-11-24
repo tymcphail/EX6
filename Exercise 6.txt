@@ -1,0 +1,44 @@
+Exercise 6:
+
+Ty Mcphail
+
+2/16/24, 10:35 PM
+
+I am using Amazon as my business
+
+ 
+un-normalized:
+
+ 
+Orders(Item_Code, Order_Code, Item_Details, Item_ Rating, Item_SN, Item_Price, Quantity)
+
+ 
+
+Normalization:
+
+Step 1:
+
+1NF
+
+Orders(Item_Code, Order_Code, Item_Details, Item_Rating, Item_SN, Item_Price, Order_Price, Order_Address)
+
+FFD: Item_Code, Order_Code -> Item_Price, Order_Address
+
+PD:Order_Code -> Item_Details: Item_ID -> Item_Price
+
+TD: Item_SN -> Item_Rating
+
+ 
+
+Step 2:
+
+2NF
+
+Item(Item_Details, Item_Rating )
+
+Order(Order_Code, Item_Code, Order_Price, Order_Address)
+
+FFD: Order_Code , Item_Code -> Order_Price: Order Code-> Order_Address
+
+
+ 
